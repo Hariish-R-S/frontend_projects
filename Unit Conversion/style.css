@@ -1,0 +1,95 @@
+.head {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+body {
+    /* background-image: linear-gradient(90deg, rgb(175, 97, 236), rgb(236, 97, 206), rgba(209, 29, 110, 0.9)); */
+    /* background: url('https://img.freepik.com/free-vector/seamless-pattern-with-school-office-stationery_107791-9568.jpg?size=626&ext=jpg&ga=GA1.2.2079244955.1680078758&semt=ais'); */
+    background: url('https://png.pngtree.com/background/20210712/original/pngtree-hand-drawn-math-education-calculator-ruler-background-picture-image_1178880.jpg');
+}
+
+::selection {
+    color: white;
+    background-color: black;
+}
+
+.main {
+    /* background-color: powderblue; */
+    background: url('https://png.pngtree.com/background/20210712/original/pngtree-cute-hand-drawn-style-mathematics-education-pink-stripes-background-picture-image_1176959.jpg');
+    background-size:cover;
+    border-radius: 15px;
+    margin: 50px;
+    padding: 20px;
+    box-shadow: 8px 9px 20px black;
+}
+
+p{
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkNLijsa3oMa3_M9JQ_pkjvLSlCB2QXtPDgg&usqp=CAU');
+    -webkit-background-clip: text;
+    font-weight: bolder;
+    background-clip: text;
+    font-size: 3.8vw;
+    color: transparent;
+    text-shadow: 0 0 20px rgb(153, 87, 0);
+}
+input {
+    height: 50px;
+    /* width: 250px; */
+    width: 50%;
+    gap: 100px;
+    border-radius: 10px;
+    margin-left: 10%;
+    font-size: 1.5vw;
+}
+
+input[placeholder]:hover {
+    font-size: 1.7vw;
+    transition: 0.4s;
+}
+
+td {
+    width: 600px;
+    /* background-color: blue; */
+}
+
+.col {
+    width: 200px;
+}
+
+#inpUnit,
+#outUnit {
+    text-align: right;
+    color: rgb(2, 2, 28);
+    text-shadow: 5px 5px 10px rgb(80, 51, 0);
+}
+
+.conversions {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 50px;
+    column-gap: 20px;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+.btn {
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    width: 270px;
+    /* flex-grow: 3; */
+    padding: 10px;
+    border: 2px white;
+    /* box-shadow: 0 0 10px rgb(7, 1, 84); */
+    box-shadow: 8px 10px 10px rgb(7, 1, 84);
+    /* background-image: linear-gradient(120deg, rgb(71, 71, 231), rgb(249, 178, 45)); */
+    background-color: rgb(44, 83, 212);
+}
+
+.btn:hover {
+    background-color: rgba(44, 83, 212, 0.8);
+    box-shadow: -8px 10px 10px rgb(7, 1, 84);
+    transition: 0.4s;
+}

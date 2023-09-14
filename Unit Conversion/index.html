@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="Website Icon" type="png" href="Calculator Icon.png">
+    <title>Unit Converter</title>
+</head>
+
+<body>
+    <div class="head">
+        <p>UNIT CONVERTER</p>
+    </div>
+    <div class="main">
+        <table>
+            <tr>
+                <td class="col"><h2 id="inpUnit"></h2></td>
+                <td><input type="number" id="inp" placeholder=" Enter unit here.." /></td>
+                <td class="col"><h2 id="outUnit"></h2></td>
+                <td><input type="text" id="output" placeholder="Output shown here" /></td>
+            </tr>
+        </table><br>
+        <!-- <button type="submit" onclick="convert()">Convert</button> -->
+        <div class="conversions">
+            <button class="btn b1" onclick="toInch()">cm to inch</button>
+            <button class="btn b2" onclick="toMeter()">cm to m</button>
+            <button class="btn b3" onclick="toMillimeter()">cm to mm</button>
+            <button class="btn b4" onclick="toFareheit()">C to F</button>
+            <button class="btn b5" onclick="toFeet()">inch to feet</button>
+            <button class="btn b6" onclick="toKilometer()">m to km</button>
+            <button class="btn b7" onclick="toMiles()">km to miles</button>
+            <button class="btn b8" onclick="toCentimeter()">m to cm</button>
+            <button class="btn b9" onclick="mmToCm()">mm to cm</button>
+            <button class="btn b10" onclick="inchTocm()">inch to cm</button>
+            <button class="btn b11" onclick="toCelcius()">F to C</button>
+            <button class="btn b12" onclick="kmTom()">km to m</button>
+        </div>
+    </div>
+    <script src="Converter.js"></script>
+</body>
+
+</html>
