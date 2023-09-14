@@ -1,0 +1,185 @@
+@font-face {
+    font-family: 'Retro';
+    src: url('./RetroCool-Regular.ttf');
+}
+
+body {
+    display: grid;
+    place-items: center;
+    background-color: rgb(221, 108, 238);
+}
+
+span {
+    color: #fff;
+}
+
+h1 {
+    display: inline;
+    font-family: 'Retro';
+    font-size: 45px;
+    letter-spacing: .5px;
+}
+
+#txt {
+    transition: letter-spacing .5s;
+}
+
+#txt:hover {
+    letter-spacing: .5px;
+    transition: letter-spacing .5s;
+}
+
+.main {
+    padding: 10px;
+    width: 550px;
+    height: auto;
+    border-radius: 15px;
+    background-color: rgb(228, 162, 238);
+    box-shadow: 0 0 20px rgb(77, 77, 77);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+.init {
+    margin: 0 7px 10px 7px;
+    margin-top: 15px;
+    height: 25px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgb(229, 112, 247);
+    background-color: aliceblue;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    opacity: 1;
+    animation: drop .5s;
+}
+
+.init::first-letter {
+    text-transform: capitalize;
+}
+
+.final {
+    animation: leave 1s ease-out forwards;
+}
+
+.term {
+    animation: term 1s forwards;
+}
+
+@keyframes term {
+    from {
+        transform: translateX(-10px);
+        background-color: rgb(2, 180, 2);
+        color: white;
+        transition: all 1s;
+    }
+
+    to {
+        transform: translateX(550px);
+        background-color: rgb(2, 180, 2);
+        opacity: 0;
+        transition: all .5s;
+    }
+}
+
+@keyframes leave {
+    from {
+        transform: translateX(10px);
+        color: white;
+        background-color: red;
+        transition: all 1s;
+    }
+
+    to {
+        transform: translateX(-550px);
+        background-color: red;
+        opacity: 0;
+        transition: all .1s;
+    }
+}
+
+@keyframes drop {
+    from {
+        transform: translateY(-10%);
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+:is(#inp, input) {
+    border: .2px solid black;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 25px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#inp {
+    display: grid;
+    grid-template-columns: 2.5fr .5fr;
+    gap: 10px;
+    border: 0 transparent;
+    height: 50px;
+    padding: 10px;
+}
+
+button {
+    border: .2px solid black;
+    border-radius: 5px;
+    overflow: hidden;
+    background-image: linear-gradient(-30deg, rgb(167, 0, 179), rgb(231, 85, 253), rgb(221, 108, 238));
+    transition: 1s;
+}
+
+button>i {
+    width: 70px;
+    height: 20px;
+    color: #fff;
+    /* background-color: red; */
+    transition: .2s;
+    transform: translateY(6px);
+}
+
+button:hover>i {
+    scale: 1.2;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-image: linear-gradient(-45deg, rgb(167, 0, 179), rgb(231, 85, 253), rgb(221, 108, 238));
+    cursor: pointer;
+    transition: all 1s;
+}
+
+
+p>i {
+    visibility: hidden;
+    color: rgb(133, 131, 131);
+    float: right;
+    transform: translateY(3px);
+    /* background-color: red; */
+}
+
+p>i:nth-child(even):hover {
+    color: rgb(2, 180, 2);
+    cursor: pointer;
+}
+
+p>i:nth-child(odd):hover {
+    color: red;
+    cursor: pointer;
+}
+
+p:hover>i {
+    visibility: visible;
+}
+
+p>i:nth-child(odd):hover,
+p>i:nth-child(even):hover {
+    scale: 1.1;
+    transition: .2s;
+}
