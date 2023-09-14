@@ -1,0 +1,90 @@
+* {
+    margin: 10px;
+    padding: 10px;
+    font-family:poppins, sans-serif;
+}
+
+body{
+    background: url('https://png.pngtree.com/thumb_back/fh260/background/20210311/pngtree-calculator-childrens-day-toy-background-image_582237.jpg') center fixed;
+    background-size: cover;
+    background-blend-mode:color-burn;
+}
+
+.calculator {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    padding: 5px;
+    /* width: 350px; */
+    height: 455px;
+    box-shadow: 8px 8px  rgb(39, 0, 210);
+    background-color: rgb(26, 11, 88);
+}
+
+h2{
+    text-align: center;
+    color: #ffffff;
+    letter-spacing: 3px;
+}
+
+#input {
+    display: block;
+    height: 30px;
+    writing-mode: horizontal-bt;
+    border: .5px solid white;
+    border-radius: 5px;
+    text-align: right;
+    background-color: rgb(47, 14, 192);
+    /* rgb(14, 0, 74); */
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.btns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    height: 310px;
+    margin: 0;
+    padding: 8px;
+    /* background-color: yellow; */
+}
+
+#equal {
+    grid-column: 3/5;
+    background-color: orange;
+}
+
+:is(#ac, #del) {
+    background-color: rgb(254, 176, 251);
+}
+
+:is(#percent, #divide, #multiple, #add, #minus) {
+    background-color: rgb(3, 169, 211);
+}
+
+.keys {
+    display: grid;
+    place-content: center;
+    margin: 0px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 23px;
+    font-family: poppins, sans-serif;
+    background-color: rgb(23, 23, 252);
+    border-radius: 5px;
+    text-align: center;
+    transition: all .03s;
+}
+
+.keys:hover {
+    opacity: 0.8;
+}
+
+.keys:active {
+    transition: all .03s;
+    border-radius: 100px;
+    scale: .8;
+}

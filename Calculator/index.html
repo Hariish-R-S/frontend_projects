@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./calculator-logo.png">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="calculator">
+        <h2>CALCULATOR</h2>
+        <input type="text" id="input">
+        <div class="btns">
+            <span class="keys" id="ac" onclick="clr()">AC</span>
+            <span class="keys" id="del" onclick="del()">Del</span>
+            <span class="keys" id="percent" onclick="attach(this.innerText)">%</span>
+            <span class="keys" id="divide" onclick="attach(this.innerText)">/</span>
+            <span class="keys" id="num7" onclick="attach(this.innerText)">7</span>
+            <span class="keys" id="num8" onclick="attach(this.innerText)">8</span>
+            <span class="keys" id="num9" onclick="attach(this.innerText)">9</span>
+            <span class="keys" id="multiple" onclick="attach(this.innerText)">*</span>
+            <span class="keys" id="num4" onclick="attach(this.innerText)">4</span>
+            <span class="keys" id="num5" onclick="attach(this.innerText)">5</span>
+            <span class="keys" id="num6" onclick="attach(this.innerText)">6</span>
+            <span class="keys" id="add" onclick="attach(this.innerText)">+</span>
+            <span class="keys" id="num1" onclick="attach(this.innerText)">1</span>
+            <span class="keys" id="num2" onclick="attach(this.innerText)">2</span>
+            <span class="keys" id="num3" onclick="attach(this.innerText)">3</span>
+            <span class="keys" id="minus" onclick="attach(this.innerText)">-</span>
+            <span class="keys" id="num0" onclick="attach(this.innerText)">0</span>
+            <span class="keys" id="dot" onclick="attach(this.innerText)">.</span>
+            <span class="keys" id="equal" onclick="manipulate()">=</span>
+        </div>
+    </div>
+    <script src="./calculate.js"></script>
+</body>
+
+</html>
