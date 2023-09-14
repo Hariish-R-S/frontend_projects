@@ -1,0 +1,237 @@
+.login {
+    border: solid 0.5px grey;
+     /* rgba(167, 167, 167, 0.4); */
+    height: 428px;
+    margin-left: 654px;
+    margin-top: 45px;
+    /* margin-right: 25.2vw; */
+    width: 349px;
+}
+.out{
+    position: absolute;
+    left: 240px;
+    top: -45px;
+    width: 283px;
+    height: 569px;
+}
+
+.sec{
+    position: absolute;
+    left:145px;
+    top: -55px;
+    width: 283px;
+    height: 569px;
+}
+.srnsht{
+    position: absolute;
+    left: 345px;
+    top: 65px;
+    width: 250px;
+    height: 541px;
+    animation-name: anim;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes anim {
+    0%, 100%{
+        background-image: url('./screenshot1.png');
+    }
+    25%{
+        background-image: url('./screenshot2.png');
+    }    
+    50%{
+        background-image: url('./screenshot3.png');
+    }
+    75%{
+        background-image: url('./screenshot4.png');
+    }
+}
+img {
+    width: 165px;
+    opacity: 0.9;
+    margin-left: 90px;
+    margin-top: 7.6%;
+}
+
+hr {
+    color: rgba(167, 167, 167, 0.3);
+    width: 75%;
+    margin-top: 22px;
+    opacity: 0.5;
+}
+
+input {
+    margin-left: 11%;
+    /* color: rgba(78, 78, 78, 0.4); */
+    color: black;
+    background-color: rgb(244, 244, 244);
+    font-family: serif;
+    opacity: 0.8;
+    border-radius: 2px;
+    border: solid 0.5px grey;
+    padding: 10px;
+    width: 71%;
+}
+
+button {
+    margin-left: 11%;
+    width: 78%;
+    margin-top: 2vh;
+    color: white;
+    cursor: pointer;
+    height: 33px;
+    font-weight: bold;
+    border: solid 1px rgb(11, 161, 248);
+    border-radius: 9px;
+    background-color: rgb(11, 161, 248);
+}
+
+button:hover{
+    background-color: rgb(0, 127, 201);
+}
+
+#uname {
+    margin-top: 3.5vh;
+}
+
+#pwd {
+    margin-top: 5px;
+}
+#save{
+    margin-left: 60px;
+    margin-top: -17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+}
+
+input[type="checkbox"]{
+    margin-left: -75px;
+    cursor: pointer;
+}
+
+#or {
+    position: absolute;
+    left: 810px;
+    top: max(330px,335px);
+    padding: 10px;
+    height: 15px;
+    font-weight: bold;
+    font-size: 12px;
+    background-color: white;
+    border-radius: 50%;
+    font-family:Arial, Helvetica, sans-serif;
+    color: grey;
+}
+.forgot{
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: -1px;
+    color: grey;
+    font-size: 12px;
+    position: relative;
+    top: 14px;
+    left: 36.2%;
+}
+
+.fb>a{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    font-weight:600;
+    text-decoration: none;
+    letter-spacing: -0.05vw;
+    color: rgb(85, 85, 130);
+}
+i{
+    color: rgb(85, 85, 130);
+    margin-top: 41px;
+    margin-left: 25%;
+}
+
+
+.ph{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: -1px;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 200;
+    color: rgb(62, 62, 62);
+    height: 20px;
+    padding: 20px 0 20px 0;
+}
+.ph>a{
+    text-decoration: none;
+    color: rgb(8, 143, 221);
+}
+#app{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 24px;
+    margin-left: 760px;
+    font-weight: 300;
+    font-size: 0.8em;
+}
+.gle{
+    width: 134px;
+    height: 40px;
+    margin-top: 2px;
+   margin-left: 660px;
+}
+
+.ms{
+    margin-top: 2px;
+    margin-left: 28px;
+    width: 110px;
+    height: 40px;
+}
+
+
+.end{
+    /* position: absolute; */
+    margin-top: 50px; 
+    margin-left: 216px;
+}
+ul{
+    box-sizing: border-box;
+    list-style-type: none;
+    padding: 15px;
+}
+li{
+    display: inline;
+}
+
+li>a{
+    text-align: center;
+    padding: 6px;
+    color: grey;
+    font-size: x-small;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+
+li>a:hover{
+    text-decoration: underline;
+}
+
+.cpy{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: gray;
+    font-size: x-small;
+    width: 280px;
+    margin-left: 540px;
+    margin-top: -50px;
+    /* margin-bottom: 40px; */
+}
+
+.phone{
+    display: block;
+}
+
+@media (orientation: portrait){
+    .phone{
+        display: none;
+    }
+    .login{
+        margin-left: 60px;
+    }
+}
