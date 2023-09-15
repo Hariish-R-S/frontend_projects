@@ -18,6 +18,7 @@ body{
     border-radius: 10px;
     padding: 5px;
     /* width: 350px; */
+    user-select: none;
     height: 455px;
     box-shadow: 8px 8px  rgb(39, 0, 210);
     background-color: rgb(26, 11, 88);
