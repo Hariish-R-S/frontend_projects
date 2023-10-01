@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="websit icon" href="./logo.png">
+    <title>OTP Generator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" contenteditable="true">
+            <span id="digit1"></span>
+            <span id="digit2"></span>
+            <span id="digit3"></span>
+            <span id="digit4"></span>
+        </div>
+        <br><br>
+        <button id="generate" onclick="generate()"> <i class="fa-solid fa-rotate-right fa-xl"></i>&nbsp; Generate
+            OTP</button><br>
+        <button id="verify" onclick="verify()"><i class="fa-solid fa-user-check fa-xl"></i>&nbsp; Verify</button>
+        <br>
+        <div id="result"></div>
+    </div>
+    <script src="./otp.js"></script>
+</body>
+
+</html>
